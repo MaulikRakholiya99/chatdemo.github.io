@@ -1,8 +1,7 @@
 var express = require('express');
 var app = require('express')();
 var path = require('path');
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
+// var server = require('http').Server(app);
 const port = process.env.port || 8000;
 const publicPath = path.join(__dirname, "../public")
 
@@ -13,8 +12,9 @@ app.get('/', function(req, res) {
     // res.send("hello form maulik");
 });
 
-server.listen(port);
+var server = app.listen(port);
 
+var io = require('socket.io')(server);
 const users = {};
 
 io.on('connection', socket =>{
