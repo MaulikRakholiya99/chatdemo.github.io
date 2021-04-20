@@ -2,7 +2,7 @@ var express = require('express');
 var app = require('express')();
 var path = require('path');
 // var server = require('http').Server(app);
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 const publicPath = path.join(__dirname, "../public")
 
 app.use('/public', express.static(publicPath));
