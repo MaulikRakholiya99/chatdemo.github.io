@@ -1,4 +1,4 @@
-const socket = io('https://maulikrakholiya99.github.io:8000');
+const socket = io('/');
 
 const form = document.getElementById('msg_iarea');
 const messageinput = document.getElementById('msg_input');
