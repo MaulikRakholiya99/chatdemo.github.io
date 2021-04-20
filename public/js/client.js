@@ -1,4 +1,4 @@
-const socket = io('/');
+const socket = io('https://chatdemonode.herokuapp.com/');
 
 const form = document.getElementById('msg_iarea');
 const messageinput = document.getElementById('msg_input');
