@@ -11,7 +11,7 @@ const append = (message, position) => {
     messageElement.classList.add(position + '-msg');
     // alert(messageContainer);
     messageContainer.append(messageElement);
-    messageContainer.stop().animate({ scrollTop:messageContainer[0].scrollHeight}, 1000);
+    $(".msger_chat").stop().animate({ scrollTop: $(".msger_chat")[0].scrollHeight}, 1000);
 }
 
 const name = prompt("Enter Your name");
